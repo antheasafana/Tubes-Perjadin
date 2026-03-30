@@ -39,7 +39,7 @@ class AdminsTable
 
                 
                 TextColumn::make('dokumen_admin')
-                    ->label('Dokumen Admin')
+                    ->label('Foto Admin')
                     ->url(fn($record) => asset('storage/' . $record->file_path), true)
                     ->formatStateUsing(fn($state) => $state 
                         ? '<a href="' . asset('storage/' . $state) . '" target="_blank"><i class="fas fa-file-pdf"></i> 📄 </a>' 
