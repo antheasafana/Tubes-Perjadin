@@ -39,7 +39,7 @@ class AdminForm
 
 
                 FileUpload::make('dokumen_admin')
-                    ->label('Dokumen Profil Admin')
+                    ->label('Foto Profil Admin')
                     ->directory('documents')
                     ->columnSpan(2)
                     ->required(),
